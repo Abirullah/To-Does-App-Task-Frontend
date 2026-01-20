@@ -24,10 +24,9 @@
       <code>/api/todos</code> (backend should run on port 5000).
     </p>
     <script>
-      // quick sanity fetch example
       async function checkAPI() {
         try {
-          const res = await fetch("http://localhost:5000/api/todos");
+          const res = await fetch("https://tp-dose-app-task-backend.vercel.app/");
           console.log("API response status", res.status);
         } catch (e) {
           console.warn("Could not reach backend API", e.message);
