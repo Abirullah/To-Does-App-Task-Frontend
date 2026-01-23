@@ -21,7 +21,7 @@ export default function TaskItem({ todo, onUpdate, onDelete }) {
       <div>
         {editing ? (
           <input
-            className="p-1 border rounded"
+            className="p-1 border-2 rounded"
             value={title}
             onChange={(e) => setTitle(e.target.value)}
           />
